@@ -87,7 +87,7 @@ if (cluster.isWorker){
     }
 
     return;
-} 
+}
 
 
 //Read all pool configs from pool_configs and join them with their coin profile
@@ -135,7 +135,7 @@ var buildPoolConfigs = function(){
     poolConfigFiles.forEach(function(poolOptions){
 
         poolOptions.coinFileName = poolOptions.coin;
-    
+
        for (var i=0; i < poolOptions.auxes.length; i++){
             var auxFilePath = 'coins/' + poolOptions.auxes[i].coin;
             if (!fs.existsSync(auxFilePath)){
