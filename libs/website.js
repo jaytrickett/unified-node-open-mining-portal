@@ -53,7 +53,7 @@ module.exports = function(logger){
     var indexesProcessed = {};
 
     var keyScriptTemplate = '';
-    var keyScriptProcessed = ''; 
+    var keyScriptProcessed = '';
 
     process.on('message', function(message) {
         switch(message.type){

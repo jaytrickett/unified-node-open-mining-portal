@@ -71,7 +71,7 @@ module.exports = function(logger, portalConfig, poolConfigs){
             logger.error(logSystem, 'Historics', 'Redis for stats had an error ' + JSON.stringify(err));
         });
     }
-    
+
     this.getBlocksStats = function (cback) {
         var client = redisClients[0].client;
         client.hgetall("Allblocks", function (error, data) {
